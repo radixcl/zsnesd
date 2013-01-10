@@ -154,7 +154,7 @@ void *server_listen(void *args) {
 	struct sockaddr_in server_socket;
 	struct sockaddr_in client_socket;
 	int sock_descriptor;
-	int address_size;
+	unsigned int address_size;
 	int sd;
 	char buf[255];
 	int val=1;
@@ -454,7 +454,7 @@ char *strupr(char* s) {
 	char *p = s;
 	while(*p) {
 		*p = toupper((int)*p);
-		*p++;
+		p++;
 	}
 	return s;
 }

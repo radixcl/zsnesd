@@ -1,2 +1,18 @@
-No documentation yet
+ZSNESD
+By Matias Fernandez
 
+=====================
+
+zsnesd is a standalone TCP daemon for the SNES emulator ZSNES (http://www.zsnes.com) V1.42 (the last one
+that supported netplay).
+
+
+Usage:
+./zsnesd -p <port_number> -d -a <ip_addr>
+
+-p <port_number>        Listen on specified port
+                        Default: 7845
+-d                      Don't fork into background.
+-a <ip_addr>            Listen on specified IP Address
+                        Default: 0.0.0.0
+-q                      Be quiet, don't print anything to the console.
